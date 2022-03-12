@@ -11,7 +11,7 @@ export function Inputbox (props) {
       <input
         id="inputmsg"
         type="text"
-        className="text"
+        className="textbox"
         value={value}
         onChange={e => {
           setValue(e.target.value);
