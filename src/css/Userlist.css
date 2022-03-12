@@ -2,17 +2,19 @@
   position: absolute;
   top: 0px;
   bottom: 0px;
-  background-color: #331a12;
+  background-color: #d3c7c2;
   z-index: 100;
   transition: background-color 2s width 2s left 2s;
 }
 
 .userlist.closed {
-  width: 10px;
+  width: 18px;
+  background-color: #201f1e;
 }
 
 .userlist.open {
   width: 200px;
+  background-color: #d3c7c2;
 }
 
 .userlist .close-button {
@@ -31,7 +33,7 @@
 }
 
 .userlist .close-button:hover {
-  background-color: #cee740;
+  background-color: #565753;
 }
 
 @media screen and (min-width: 768px) {
