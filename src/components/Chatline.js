@@ -25,11 +25,30 @@ function Chatline (props) {
         .then(res => res.json())
         .then(data => setElement(data.gender));
     } 
+
+    else if (text.startsWith("/nationalize")) {
+      const [, name] = text.split(" ");
+      fetch("https://api.nationalize.io/?name="+name)
+        .then(res => res.json())
+        .then(data => setElement(data.name + "=>" + data.country[0].country_id));
+    } 
+
     else if (text.startsWith("/randomfact")) {
       // ex10-01 here: Implement randomfact using fetch & promise
       // https://uselessfacts.jsph.pl/random.json?language=en
-      
+      //const [, name] = text.split(" ");
+      //fetch("https://uselessfacts.jsph.pl/random.json?="+name)
+      fetch("https://uselessfacts.jsph.pl/random.json?language=en")
+        .then(res => res.json())
+        .then(data => setElement("Today useless fact is: " + data.text));
     }
+
+    else if (text.startsWith("/catfact")) {
+      //const [, name] = text.split(" ");
+      fetch("https://catfact.ninja/fact")
+        .then(res => res.json())
+        .then(data => setElement("Today cat fact is: " + data.fact));
+    } 
   };
 
   useEffect(() => {
