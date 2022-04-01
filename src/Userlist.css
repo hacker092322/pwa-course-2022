@@ -26,7 +26,7 @@ div {
     
 }
 
-button {
+.friend-list-item {
     background: #2e2a49;
     color: #fff;
     width: 1100px;
@@ -42,13 +42,13 @@ button {
     text-align: left;
   }
 
-  button:hover {
+  .friend-list-item:hover {
     cursor: pointer;
     background: #27233f;
   }
   @media screen and (max-width: 400px) {
 
-    button {
+    .friend-list-item {
         background: #2e2a49;
         color: #fff;
         width: 300px;
