@@ -107,7 +107,7 @@ export const useAuthStateContext = () => useContext(AuthStateContext);
 const uiConfig = {
   // Popup signin flow rather than redirect flow.
   signInFlow: 'popup',
-  signInSuccessUrl: '/Profile',
+  signInSuccessUrl: '/profile',
   signInOptions: [
     firebase.auth.EmailAuthProvider.PROVIDER_ID,
   ],
