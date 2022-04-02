@@ -2,14 +2,14 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/database';
 const firebaseConfig = {
-  apiKey: "AIzaSyDOPJ9_X7MbrMXHkai922aLK2NVa7xbGjo",
-  authDomain: "gi472-pwa-course-2022.firebaseapp.com",
-  projectId: "gi472-pwa-course-2022",
-  storageBucket: "gi472-pwa-course-2022.appspot.com",
-  messagingSenderId: "967644458652",
-  appId: "1:967644458652:web:6f71ad83773786006b8759",
-  measurementId: "G-Z7Z74R200B",
-  databaseURL: "https://gi472-pwa-course-2022-default-rtdb.asia-southeast1.firebasedatabase.app"
+  apiKey: "AIzaSyCOdDJNAIuHQ9o_fUkr_9n3FpZhxhoDp8Y",
+  authDomain: "chat-app-fc09d.firebaseapp.com",
+  projectId: "chat-app-fc09d",
+  storageBucket: "chat-app-fc09d.appspot.com",
+  messagingSenderId: "607278511916",
+  appId: "1:607278511916:web:92d5028e4f72cc9f2e5e89",
+  measurementId: "G-HF9BQV5EMZ",
+  databaseURL: "https://chat-app-fc09d-default-rtdb.firebaseio.com/"
 };
 
 firebase.initializeApp(firebaseConfig);

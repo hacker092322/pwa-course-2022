@@ -6,3 +6,30 @@
   align-items: center;
   color: aliceblue;
 }
+
+.titlebar button{
+  background-color: #2c49bb;
+  border: none;
+}
+
+.imageLeft{
+  right:100%;
+}
+
+.imageLeft img{
+  margin: auto 5px;
+  float: left; 
+  top:5%; 
+}
+
+.imagePlus{
+  left:100%;
+
+}
+
+.imagePlus img{
+  margin: auto 5px;
+  float: right; 
+  top:5%; 
+}
+

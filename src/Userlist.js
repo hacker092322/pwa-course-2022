@@ -1,42 +1,53 @@
 import './Userlist.css';
-import App from './components/App';
-import Avatar from './components/Avatar';
-import { useChatStateContext } from './context/FirebaseChatContextProvider';
 import { Link } from 'react-router-dom';
 
 function Userlist() {
-    const { userList } = useChatStateContext();
-
     return(
         <div>
             <div className="imagePlus">
             <img src="plus-icon-13062.png" width="30" height="30"></img>
             </div>
-            <div className="friend-list">
-              {
-                 userList.map((item) => {
-                 return (
-                <Link to={`/Chat/${item.key}`} key={item.key}>
-                <div className={`friend-list-item ${item.position}`}>
-                <div>{item.displayName}</div>
-                </div>
-               </Link>
-                )
-                })
-            }
-      </div>
+            <Link to="/Chat">
+            <button type="button">
+            Mr. Test
+           </button>
+           </Link>
+           <Link to="/Chat">
+            <button type="button">
+            Mr. X
+           </button>
+           </Link>
+           <Link to="/Chat">
+            <button type="button">
+            L Man
+           </button>
+           </Link>
+           <Link to="/Chat">
+            <button type="button">
+            POPP
+           </button>
+           </Link>
+           <Link to="/Chat">
+            <button type="button">
+            OwO
+           </button>
+           </Link>
+           <Link to="/Chat">
+            <button type="button">
+            M-M
+           </button>
+           </Link>
         </div>
         
     )
 }
-//<div><button>Mr. Test</button></div>
-//<div><button>Mr. X</button></div>
-//<div><button>L Man 1</button></div>
-//<div><button>OwO</button></div>
-//<div><button>M-M</button></div>
-//<div><button>Lazy</button></div>
-//<div><button>POPP</button></div>
-//<div><button>Test2</button></div>
-//<div><button>Test3</button></div>
+//            <div className="UserName">Mr. Test</div>
+//            <div className="UserName">Mr. X</div>
+//            <div className="UserName">L Man 1</div>
+//            <div className="UserName">OwO</div>
+//            <div className="UserName">M-M</div>
+//            <div className="UserName">Lazy</div>
+//            <div className="UserName">POPP</div>
+//            <div className="UserName">Test2</div>
 
 export default Userlist;
